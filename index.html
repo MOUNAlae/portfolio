@@ -90,8 +90,9 @@
     .project ul{padding-left:19px;color:var(--muted)}
     .project li{margin:7px 0}
     .note{margin-top:22px;padding:16px 18px;border-left:4px solid var(--warm);background:#fff8ef;color:#66543e;font-size:14px;line-height:1.55}
+    .visual-stack{display:grid;gap:14px}
     .visual{overflow:hidden;border:1px solid var(--line);border-radius:12px;background:#f7fafb}
-    .visual img{display:block;width:100%}
+    .visual img{display:block;width:100%;height:auto;object-fit:contain;background:white}
     .visual-caption{padding:10px 14px;color:var(--muted);font-size:12px;border-top:1px solid var(--line)}
     .links{display:flex;flex-wrap:wrap;gap:10px;margin-top:24px}
     details{margin-top:18px;border-top:1px solid var(--line);padding-top:16px}
@@ -223,25 +224,34 @@
               <div class="project-grid">
                 <div>
                   <h3>DAI-COMP-001 — Duct Air Inlet composite</h3>
-                  <p class="project-summary">Conception paramétrique d’un conduit de transition en deux demi-coquilles, puis préparation du domaine fluide et prévalidation CFD.</p>
+                  <p class="project-summary">Projet multidisciplinaire reliant conception paramétrique CATIA V5, prévalidation CFD, préparation de l’industrialisation composite et chaîne qualité Python/Excel.</p>
                   <div class="metrics">
                     <div class="metric"><strong>400 mm</strong><span>longueur du conduit</span></div>
-                    <div class="metric"><strong>2 mm</strong><span>épaisseur nominale</span></div>
+                    <div class="metric"><strong>7,41 %</strong><span>%GRR Study du MSA synthétique</span></div>
                     <div class="metric"><strong>108 285</strong><span>éléments du maillage M2</span></div>
                     <div class="metric"><strong>67,434 Pa</strong><span>perte de pression totale M2</span></div>
                   </div>
                   <ul>
-                    <li>Modèle CATIA organisé autour d’une surface intérieure fonctionnelle, puis création de l’épaisseur, des brides, des perçages et de l’assemblage UPPER/LOWER.</li>
-                    <li>Comparaison de trois maillages M0–M1–M2 avec suivi de la conservation massique, de la perte de pression et du y+.</li>
-                    <li>M2 : y+ moyen 3,696 et erreur massique 0,000486 %.</li>
-                    <li>Complément méthodes : CTQ/KPC, PFMEA, plan de contrôle et analyses MSA/SPC sur données synthétiques.</li>
+                    <li>Conception CATIA V5 d’un conduit de 400 mm en deux demi-coquilles UPPER/LOWER, avec paroi nominale de 2 mm, brides, perçages, assemblage et mise en plan.</li>
+                    <li>Prévalidation CFD sous Fluent avec comparaison M0–M1–M2 ; M2 : 108 285 éléments, y+ moyen 3,696, ΔPt = 67,434 Pa et erreur massique 0,000486 %.</li>
+                    <li>Préparation d’un scénario d’industrialisation composite : gamme, Process Flow Diagram, outillages conceptuels, drapage, collage et contrôles.</li>
+                    <li>Démarche qualité : CTQ/KPC, PFMEA, plan de contrôle, MSA, SPC et capabilité sur données synthétiques ; %GRR Study = 7,41 %.</li>
                   </ul>
-                  <div class="note"><strong>Limite conservée :</strong> la variation de ΔPt entre M1 et M2 reste de 6,38 %. M2 est le meilleur compromis étudié, mais l’indépendance stricte du maillage n’est pas démontrée. L’étude ne repose pas sur des essais physiques.</div>
-                  <details><summary>Ce que ce projet m’a appris</summary><p>J’ai surtout appris à ne pas confondre convergence numérique et validation physique, à documenter les choix de maillage et à corriger une géométrie CATIA qui n’était pas assez robuste pour la séparation des demi-coquilles.</p></details>
+                  <div class="note"><strong>Limites déclarées :</strong> projet personnel pédagogique sans fabrication ni validation expérimentale. La variation de ΔPt entre M1 et M2 reste de 6,38 %, donc l’indépendance stricte du maillage n’est pas démontrée. Les données qualité et les gains avant/après sont synthétiques.</div>
+                  <div class="links">
+                    <a class="button primary" href="https://github.com/MOUNAlae/dai-comp-001-duct-air-inlet" target="_blank" rel="noopener">Voir le dépôt</a>
+                  </div>
+                  <details><summary>Ce que ce projet m’a appris</summary><p>À relier conception, simulation, fabricabilité et qualité dans une même démarche, tout en séparant clairement résultats numériques, hypothèses pédagogiques et validation industrielle.</p></details>
                 </div>
-                <div class="visual">
-                  <img loading="lazy" src="assets/screenshots/01_DAI_COMP_CFD.png" alt="Synthèse visuelle de l’étude CFD M0–M1–M2 du conduit DAI-COMP-001">
-                  <div class="visual-caption">Synthèse CFD issue du rapport technique DAI-COMP-001.</div>
+                <div class="visual-stack">
+                  <div class="visual">
+                    <img loading="lazy" decoding="async" src="assets/screenshots/01_DAI_COMP_CFD.png" alt="Synthèse visuelle de l’étude CFD M0–M1–M2 du conduit DAI-COMP-001">
+                    <div class="visual-caption">Prévalidation CFD : maillage, y+, conservation massique et perte de pression.</div>
+                  </div>
+                  <div class="visual">
+                    <img loading="lazy" decoding="async" src="assets/screenshots/01B_DAI_INDUSTRIALISATION_QUALITE.png" alt="Synthèse de l’industrialisation composite et de la démarche qualité du projet DAI-COMP-001">
+                    <div class="visual-caption">Industrialisation & qualité : Process Flow, outillages, PFMEA, plan de contrôle, MSA/SPC et capabilité sur données synthétiques.</div>
+                  </div>
                 </div>
               </div>
             </div>
