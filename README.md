@@ -28,6 +28,7 @@ Je prépare également une **alternance de 3A à partir de septembre 2027**.
 
 ## Projets présentés
 
+- **[EMA-120](https://github.com/MOUNAlae/industrial-performance-industry4.0)** — performance industrielle sur une ligne synthétique de sept postes : Python, Excel, Power BI, takt, TRS, Pareto, VSM, SMED et scénario d’amélioration. La capacité estimée de 189,2 u/j reste sous la demande de 210 u/j ; le TRS futur n’est pas calculé.
 - **DAI-COMP-001** — CATIA V5, CFD Fluent, industrialisation composite, PFMEA, plan de contrôle, MSA/SPC et Python/Excel.
 - **Outil Python / ANSYS** — pré-dimensionnement, RDM, vérification éléments finis, analyse modale et qualité logicielle.
 - **MEA-EMS-001** — gestion énergétique tolérante aux pannes, Python, MATLAB, Simulink, Stateflow, exigences et validation.
